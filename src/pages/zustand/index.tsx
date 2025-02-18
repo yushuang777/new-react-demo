@@ -1,8 +1,8 @@
-import { create } from "zustand";
-import React from "react";
+import { create } from 'zustand';
+import React from 'react';
 const useStore = create((set) => ({
   count: 1,
-  inc: () => set((state) => ({ count: state.count + 1 })),
+  inc: () => set((state: { count: number }) => ({ count: state.count + 1 })),
 }));
 
 function Index() {

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function Info(props) {
+function Info() {
   return <div>info</div>;
 }
 

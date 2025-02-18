@@ -15,6 +15,7 @@
     "es-toolkit": "^1.16.0",
     "express": "^4.20.0",
     "framer-motion": "^11.5.4",
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-flow-renderer": "^10.3.17",
@@ -23,7 +24,7 @@
     "react-stonecutter": "^0.3.10",
     "react-webworker-hook": "^1.0.0",
     "save-dev": "^0.0.1-security",
-    "web-vitals": "^4.2.3",
+    "web-vitals": "^4.2.4",
     "zustand": "^5.0.1"
   },
   "scripts": {
@@ -52,6 +53,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
+    "@types/lodash": "^4.17.15",
     "typescript": "^5.7.3"
   }
 }

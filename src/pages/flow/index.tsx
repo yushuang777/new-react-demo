@@ -1,30 +1,31 @@
-import React, { useCallback, useState } from "react";
+//@ts-nocheck
+import React, { useCallback, useState } from 'react';
 import ReactFlow, {
   addEdge,
   applyEdgeChanges,
   applyNodeChanges,
-} from "react-flow-renderer";
+} from 'react-flow-renderer';
 
 const initialNodes = [
   {
-    id: "1",
-    data: { label: "Node 1" },
+    id: '1',
+    data: { label: 'Node 1' },
     position: { x: 150, y: 0 },
   },
   {
-    id: "2",
-    data: { label: "Node 2" },
+    id: '2',
+    data: { label: 'Node 2' },
     position: { x: 0, y: 150 },
   },
   {
-    id: "3",
-    data: { label: "Node 3" },
+    id: '3',
+    data: { label: 'Node 3' },
     position: { x: 300, y: 150 },
   },
 ];
 const initialEdges = [
-  { id: "line1", source: "1", target: "2" },
-  { id: "line2", source: "1", target: "3" },
+  { id: 'line1', source: '1', target: '2' },
+  { id: 'line2', source: '1', target: '3' },
 ];
 function Flow(props) {
   const [nodes, setNodes] = useState(initialNodes);
@@ -45,7 +46,7 @@ function Flow(props) {
     [setEdges]
   );
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div style={{ width: '100vw', height: '100vh' }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}

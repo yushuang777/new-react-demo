@@ -1,7 +1,7 @@
-import { Button, Card, ConfigProvider, theme } from "antd";
-import React, { useState } from "react";
+import { Button, Card, ConfigProvider, theme } from 'antd';
+import React, { useState } from 'react';
 const { darkAlgorithm, defaultAlgorithm } = theme;
-function DarkTheme(props) {
+function DarkTheme() {
   const [isDark, setIsDark] = useState(false);
   const handleClick = () => {
     setIsDark(!isDark);
@@ -10,7 +10,7 @@ function DarkTheme(props) {
     <ConfigProvider
       theme={{ algorithm: isDark ? darkAlgorithm : defaultAlgorithm }}
     >
-      <Card style={{ width: "max-content" }}>
+      <Card style={{ width: 'max-content' }}>
         <Button onClick={handleClick}>切换</Button>
       </Card>
     </ConfigProvider>

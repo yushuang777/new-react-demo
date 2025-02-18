@@ -1,7 +1,7 @@
-import { Button, Progress } from "antd";
-import React, { useState } from "react";
+import { Button, Progress } from 'antd';
+import React, { useState } from 'react';
 
-function ProgressDemo(props) {
+function ProgressDemo() {
   const [percent, setPercent] = useState(0);
 
   const upload = () => {
@@ -18,7 +18,7 @@ function ProgressDemo(props) {
 
   return (
     <>
-      <Progress type="circle" percent={percent} />
+      <Progress type='circle' percent={percent} />
       <Button onClick={upload}>上传</Button>
     </>
   );

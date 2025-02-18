@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { createWorker } from "./workerHelper";
+import React, { useEffect, useState } from 'react';
+import { createWorker } from './workerHelper';
 
-function WebWorkerBlob(props) {
+function WebWorkerBlob() {
   const [computeResult, setComputeResult] = useState(null);
   const [processResult, setProcessResult] = useState(null);
   useEffect(() => {
@@ -13,8 +13,8 @@ function WebWorkerBlob(props) {
     processWorker.onmessage = (e) => {
       setProcessResult(e.data);
     };
-    computeWorker.postMessage({ task: "test1", data: 10 });
-    processWorker.postMessage({ task: "test2", data: "测试" });
+    computeWorker.postMessage({ task: 'test1', data: 10 });
+    processWorker.postMessage({ task: 'test2', data: '测试' });
     return () => {
       computeWorker.terminate();
       processWorker.terminate();

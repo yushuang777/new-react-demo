@@ -19,7 +19,6 @@ import ShareWorker from '../pages/shareWorker/index';
 import TestPage from '../pages/testpage/index';
 import Test from '../pages/ystest/index';
 import Zustand from '../pages/zustand/index';
-import ExTable from '../pages/exTable/index';
 import LazyFunction from '../pages/lazyFunction/index';
 import WebSocketTest from '../pages/websocketTest/index';
 export interface CustomRouteObject extends NonIndexRouteObject {
@@ -117,11 +116,6 @@ export const routeList: CustomRouteObject[] = [
     title: 'zustand',
     path: '/zustand',
     element: <Zustand />,
-  },
-  {
-    title: 'exTable',
-    path: '/exTable',
-    element: <ExTable />,
   },
   {
     title: '惰性函数',
