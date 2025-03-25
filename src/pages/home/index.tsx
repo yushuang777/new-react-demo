@@ -5,7 +5,7 @@ import Menu from '../../components/menu';
 function Home() {
   return (
     <div>
-      Home
+      目录
       <Menu />
       <Outlet />
     </div>
